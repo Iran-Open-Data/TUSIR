@@ -1,0 +1,12 @@
+# Package Name
+package_name: TUSIR
+
+# Local Directory
+local_dir: Data/TUSIR
+in_root: true
+
+# Years (list of years or range in for of: "first_year - last_year")
+years: [1387, 1393, 1398]
+
+# Local Settings
+local_settings: config/tusir_settings.yaml

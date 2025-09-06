@@ -1,0 +1,29 @@
+1387:
+  files:
+    - name: data.zip
+      original: https://amar.org.ir/Portals/0/Files/RawData/Y87_88.zip
+
+1393:
+  files:
+    - name: data.zip
+      original: https://amar.org.ir/Portals/0/Files/RawData/TimeUseForExternalUserl_Y93-94.zip
+
+    - name: metadata.zip
+      original: https://amar.org.ir/Portals/0/Files/1393.zip
+
+1398:
+  files:
+    - name: data_part_1.zip
+      original: https://amar.org.ir/Portals/0/Files/Raw%20Data_991223/Time%20Use/TimeUse_RawData_Part1_991203.zip
+
+    - name: data_part_2.zip
+      original: https://amar.org.ir/Portals/0/Files/Raw%20Data_991223/Time%20Use/TimeUse_RawData_Part2_991203.zip
+
+    - name: metadata.xls
+      original: https://amar.org.ir/Portals/0/Statistics/12811/TimeUse_MetaData_ExternalUser_98-99.xls
+
+    - name: form_1.pdf
+      original: https://amar.org.ir/Portals/0/Statistics/12792/form_1.pdf
+
+    - name: form_2.pdf
+      original: https://amar.org.ir/Portals/0/Statistics/12793/form_2.pdf

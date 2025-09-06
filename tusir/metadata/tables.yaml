@@ -1,0 +1,459 @@
+
+table_availability:
+  form_1_master: [1387, 1393, 1398]
+
+default_table_settings:
+  # Options: error, drop
+  missings: drop
+
+
+form_1_master:
+  file_code: "*Form1Master*"
+
+  columns:
+    KhnID:
+      new_name: ID
+      type: UInt64
+
+    Mah:
+      new_name: Month
+      type: UInt8
+
+    Rooz:
+      new_name: Day
+      type: UInt8
+
+    amargiry_nobat:
+      new_name: Census_Turn
+      type: UInt8
+
+    # pasokhgo_radif:
+    #   new_name: 
+    #   type: 
+
+    # KhanevarType:
+    #   new_name: 
+    #   type: 
+
+    # IsJaygozin:
+    #   new_name: 
+    #   type: 
+
+    # Q2:
+    #   new_name: 
+    #   type: 
+
+    # Q2_Reason:
+    #   new_name: 
+    #   type: 
+
+    # TedadAfradKhanevar:
+    #   new_name: 
+    #   type: 
+
+    # TedadAfrad6AndOver:
+    #   new_name: 
+    #   type: 
+
+    # TedadAfrad15AndOver:
+    #   new_name: 
+    #   type: 
+
+    # TakmilStatus:
+    #   new_name: 
+    #   type: 
+
+    # Reason:
+    #   new_name: 
+    #   type: 
+
+    # Reason_Txt:
+    #   new_name: 
+    #   type: 
+
+    # MaskanType:
+    #   new_name: 
+    #   type: 
+
+    # MaskanType_Other:
+    #   new_name: 
+    #   type: 
+
+    # CaptureType:
+    #   new_name: 
+    #   type: 
+
+    # Q2_1:
+    #   new_name: 
+    #   type: 
+
+    # Q2_2:
+    #   new_name: 
+    #   type: 
+
+    # Q2_3:
+    #   new_name: 
+    #   type: 
+
+    # Q2_4:
+    #   new_name: 
+    #   type: 
+
+    # Q2_5:
+    #   new_name: 
+    #   type: 
+
+    # Q2_6:
+    #   new_name: 
+    #   type: 
+
+    # Q2_7:
+    #   new_name: 
+    #   type: 
+
+    # Q2_8:
+    #   new_name: 
+    #   type: 
+
+    # Q2_9:
+    #   new_name: 
+    #   type: 
+
+    # Q2_10:
+    #   new_name: 
+    #   type: 
+
+    # Q2_11:
+    #   new_name: 
+    #   type: 
+
+    # Q2_12:
+    #   new_name: 
+    #   type: 
+
+    # Q2_13:
+    #   new_name: 
+    #   type: 
+
+    # Q2_14:
+    #   new_name: 
+    #   type: 
+
+    # Q2_15:
+    #   new_name: 
+    #   type: 
+
+    # Q2_16:
+    #   new_name: 
+    #   type: 
+
+    # Q2_17:
+    #   new_name: 
+    #   type: 
+
+    # Q2_18:
+    #   new_name: 
+    #   type: 
+
+    # Q2_19:
+    #   new_name: 
+    #   type: 
+
+    # Q2_20:
+    #   new_name: 
+    #   type: 
+
+    # Q2_21:
+    #   new_name: 
+    #   type: 
+
+    # Q2_22:
+    #   new_name: 
+    #   type: 
+
+    # Q2_23:
+    #   new_name: 
+    #   type: 
+
+    # UseInternet:
+    #   new_name: 
+    #   type: 
+
+    # InternetCnnType1:
+    #   new_name: 
+    #   type: 
+
+    # InternetCnnType2:
+    #   new_name: 
+    #   type: 
+
+    # InternetCnnType3:
+    #   new_name: 
+    #   type: 
+
+    # InternetCnnType4:
+    #   new_name: 
+    #   type: 
+
+    # InternetCnnType4_Name:
+    #   new_name: 
+    #   type: 
+
+    # InternetCnnType_EN:
+    #   new_name: 
+    #   type: 
+
+    # Without_W:
+    #   new_name: 
+    #   type: 
+
+    # W_Khn:
+    #   new_name: 
+    #   type: 
+
+    # W_Khn_Y:
+    #   new_name: 
+    #   type: 
+
+
+form_1_detail:
+  file_code: "*Form1Detail*"
+
+  columns:
+    ID:
+      new_name: Member_ID
+      type: UInt64
+
+    KhnID:
+      new_name: ID
+      type: UInt64
+
+    # D01:
+    #   new_name:
+    #   type: 
+
+    # D03:
+    #   new_name:
+    #   type: 
+
+    # D04:
+    #   new_name:
+    #   type: 
+
+    # D05:
+    #   new_name:
+    #   type: 
+
+    # D06:
+    #   new_name:
+    #   type: 
+
+    # D07:
+    #   new_name:
+    #   type: 
+
+    # D08:
+    #   new_name:
+    #   type: 
+
+    # D09:
+    #   new_name:
+    #   type: 
+
+    # D10:
+    #   new_name:
+    #   type: 
+
+    # D11:
+    #   new_name:
+    #   type: 
+
+    # D12:
+    #   new_name:
+    #   type: 
+
+    # D13:
+    #   new_name:
+    #   type: 
+
+    # D14:
+    #   new_name:
+    #   type: 
+
+    # D15:
+    #   new_name:
+    #   type: 
+
+    # D16:
+    #   new_name:
+    #   type: 
+
+    # D17:
+    #   new_name:
+    #   type: 
+
+    # D18:
+    #   new_name:
+    #   type: 
+
+    # Without_W:
+    #   new_name:
+    #   type: 
+
+    # W:
+    #   new_name:
+    #   type: 
+
+    # W_Khn:
+    #   new_name:
+    #   type: 
+
+    # W_Khn_Y:
+    #   new_name:
+    #   type: 
+
+
+form_2_master:
+  file_code: "*Form2Master*"
+
+  columns:
+    ID:
+      new_name: Member_ID
+      type: UInt64
+
+    KhnID:
+      new_name: ID
+      type: UInt64
+
+    # radif:
+    #   new_name: 
+    #   type:
+
+    # pasokhgo_radif:
+    #   new_name: 
+    #   type:
+
+    # AmargiriDay_Type1:
+    #   new_name: 
+    #   type:
+
+    # AmargiriDay_Type2:
+    #   new_name: 
+    #   type:
+
+    # TakmilDay:
+    #   new_name: 
+    #   type:
+
+    # TahvilDate_Day:
+    #   new_name: 
+    #   type:
+
+    # TahvilDate_Month:
+    #   new_name: 
+    #   type:
+
+    # TakmilDate_Day:
+    #   new_name: 
+    #   type:
+
+    # TakmilDate_Month:
+    #   new_name: 
+    #   type:
+
+    # DayType:
+    #   new_name: 
+    #   type:
+
+    # IsEmployed:
+    #   new_name: 
+    #   type:
+
+    # Without_W:
+    #   new_name: 
+    #   type:
+
+    # W:
+    #   new_name: 
+    #   type:
+
+    # WY:
+    #   new_name: 
+    #   type:
+
+
+form_2_detail:
+  file_code: "*Form2Detail*"
+
+  columns:
+    ID:
+      new_name: Member_ID
+      type: UInt64
+
+    KhnID:
+      new_name: ID
+      type: UInt64
+
+    # radif:
+    #   new_name:
+    #   type: 
+
+    # Q1:
+    #   new_name:
+    #   type: 
+
+    # Q2Alpha:
+    #   new_name:
+    #   type: 
+
+    # Q2Code:
+    #   new_name:
+    #   type: 
+
+    # Q3Alpha:
+    #   new_name:
+    #   type: 
+
+    # Q3Code:
+    #   new_name:
+    #   type: 
+
+    # Q4:
+    #   new_name:
+    #   type: 
+
+    # Q5:
+    #   new_name:
+    #   type: 
+
+    # Q6:
+    #   new_name:
+    #   type: 
+
+    # Q7:
+    #   new_name:
+    #   type: 
+
+    # Q8:
+    #   new_name:
+    #   type: 
+
+    # Without_W:
+    #   new_name:
+    #   type: 
+
+    # W:
+    #   new_name:
+    #   type: 
+
+    # WY:
+    #   new_name:
+    #   type: 
+
+    # Gender:
+    #   new_name:
+    #   type: 
+
+    # Age:
+    #   new_name:
+    #   type: 
