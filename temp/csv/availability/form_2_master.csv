@@ -1,0 +1,4 @@
+Year,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+1387,Period,Ostan,PSU,Khanevar,RadifPasokhgoo,A06,A07,A08,A09,A10,A11,B1_1,B1_2,Status,Response,W1,
+1393,Period,PSU,Khanevar,RadifPasokhgoo,A06,A07,A08,A09,A10,A11,B1_1,B1_2,KhnID,Without_W,W,W_Khn,KhnID_FardId
+1398,ID,KhnID,radif,pasokhgo_radif,AmargiriDay_Type1,AmargiriDay_Type2,TakmilDay,TahvilDate_Day,TahvilDate_Month,TakmilDate_Day,TakmilDate_Month,DayType,IsEmployed,Without_W,W,WY,

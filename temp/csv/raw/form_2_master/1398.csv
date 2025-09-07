@@ -1,0 +1,17 @@
+Column,Missing_Count,Availability_Ratio,Data_Type,Unique_Values,Frequent_Values
+ID,0,100.0,integer,31901,2028591262: 1; 2028624276: 1; 2028644503: 1
+KhnID,0,100.0,integer,12994,2614930853: 9; 2413597786: 9; 2432180218: 9
+radif,0,100.0,integer,10,"1: 12,994; 2: 11,651; 3: 4,643"
+pasokhgo_radif,0,100.0,integer,11,"1: 11,973; 2: 10,899; 3: 3,968"
+AmargiriDay_Type1,21557,32.425315820820664,integer,3,"1: 9,198; 2: 1,146"
+AmargiriDay_Type2,30330,4.924610513776995,integer,3,2: 868; 1: 703
+TakmilDay,0,100.0,integer,7,"3: 4,644; 4: 4,638; 2: 4,622"
+TahvilDate_Day,0,100.0,integer,17,"10: 3,439; 11: 3,417; 12: 3,408"
+TahvilDate_Month,0,100.0,integer,4,"9: 8,728; 3: 8,665; 6: 8,524"
+TakmilDate_Day,0,100.0,integer,15,"12: 3,409; 13: 3,400; 11: 3,343"
+TakmilDate_Month,0,100.0,integer,4,"9: 8,728; 3: 8,665; 6: 8,524"
+DayType,0,100.0,integer,2,"1: 26,242; 2: 5,659"
+IsEmployed,0,100.0,integer,2,"0: 19,986; 1: 11,915"
+Without_W,0,100.0,integer,1,"1: 31,901"
+W,0,100.0,floating,2209,8998.280003936723: 140; 15445.362610790293: 132; 9341.517238941531: 124
+WY,0,100.0,floating,2209,3029.005939839612: 140; 5199.226415558589: 132; 2335.379309735383: 124

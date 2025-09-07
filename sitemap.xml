@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://iran-open-data.github.io/TUSIR/tables/raw/form_1_detail/</loc>
+         <lastmod>2025-09-07</lastmod>
+    </url>
+    <url>
+         <loc>https://iran-open-data.github.io/TUSIR/tables/raw/form_1_master/</loc>
+         <lastmod>2025-09-07</lastmod>
+    </url>
+    <url>
+         <loc>https://iran-open-data.github.io/TUSIR/tables/raw/form_2_detail/</loc>
+         <lastmod>2025-09-07</lastmod>
+    </url>
+    <url>
+         <loc>https://iran-open-data.github.io/TUSIR/tables/raw/form_2_master/</loc>
+         <lastmod>2025-09-07</lastmod>
+    </url>
+</urlset>
