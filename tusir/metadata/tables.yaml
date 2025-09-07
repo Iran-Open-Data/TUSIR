@@ -1,10 +1,195 @@
 
 table_availability:
   form_1_master: [1387, 1393, 1398]
+  form_1_detail: [1387, 1393, 1398]
+  form_2_master: [1387, 1393, 1398]
+  form_2_detail: [1387, 1393, 1398]
+
 
 default_table_settings:
   # Options: error, drop
   missings: drop
+
+
+HOUSE_ITEMS:
+  household_type: &household_type
+    new_name: Household_Type
+    type: category
+    categories: 
+      1: Normal
+      2: Group
+
+  alternative_household: &alternative_household
+    new_name: Alternative_Household
+    type: boolean
+    true_condition: 1
+
+  house_dwelling_type: &house_dwelling_type
+    new_name: Dwelling_Type
+    type: category
+    categories:
+      1: Apartment_Unit
+      2: Non_Apartment_Unit
+      3: Other
+
+  house_other_dwelling: &house_other_dwelling
+    new_name: Other_Dwelling_Types
+    type: string
+
+  house_tenure: &house_tenure
+    new_name: Tenure
+    type: category
+    categories:
+        1: Owned
+        2: Rent
+        3: Provided_Housing
+        4: Free
+        5: Other
+
+  house_car: &house_car
+    new_name: Car
+    type: boolean
+    true_condition: 1
+
+  house_motorcycle: &house_motorcycle
+    new_name: Motorcycle
+    type: boolean
+    true_condition: 1
+
+  house_bicycle: &house_bicycle
+    new_name: Bicycle
+    type: boolean
+    true_condition: 1
+
+  house_radio: &house_radio_cassette
+    new_name: Radio_And_Cassette 
+    type: boolean
+    true_condition: 1
+
+  house_tv: &house_tv
+    new_name: TV
+    type: boolean
+    true_condition: 1
+
+  house_vcr: &house_vcr
+    new_name: VCR
+    type: boolean
+    true_condition: 1
+
+  house_pc: &house_pc_tablet
+    new_name: PC_And_Tablet
+    type: boolean
+    true_condition: 1
+
+  house_cellphone: &house_cellphone
+    new_name: Cellphone
+    type: boolean
+    true_condition: 1
+
+  house_phone: &house_phone
+    new_name: Phone
+    type: boolean
+    true_condition: 1
+
+  house_freezer: &house_freezer
+    new_name: Freezer
+    type: boolean
+    true_condition: 1
+
+  house_refrigerator: &house_refrigerator
+    new_name: Refrigerator
+    type: boolean
+    true_condition: 1
+
+  house_freezer_refrigerator: &house_freezer_refrigerator
+    new_name: Freezer_Refrigerator
+    type: boolean
+    true_condition: 1
+
+  house_oven: &house_oven
+    new_name: Oven
+    type: boolean
+    true_condition: 1
+
+  house_vacuum_cleaner: &house_vacuum_cleaner
+    new_name: Vacuum_Cleaner
+    type: boolean
+    true_condition: 1
+
+  house_washing_machine: &house_washing_machine
+    new_name: Washing_Machine
+    type: boolean
+    true_condition: 1
+
+  house_sewing_machine: &house_sewing_machine
+    new_name: Sewing_Machine
+    type: boolean
+    true_condition: 1
+
+  house_fan: &house_fan
+    new_name: Fan
+    type: boolean
+    true_condition: 1
+
+  house_evaporative_ac: &house_evaporative_ac
+    new_name: Evaporative_AC
+    type: boolean
+    true_condition: 1
+
+  house_split_ac: &house_split_ac
+    new_name: Split_AC
+    type: boolean
+    true_condition: 1
+
+  house_dishwasher: &house_dishwasher
+    new_name: Dishwasher
+    type: boolean
+    true_condition: 1
+
+  house_microwave_oven: &house_microwave_oven
+    new_name: Microwave_Oven
+    type: boolean
+    true_condition: 1
+
+  house_no_appliances: &house_no_appliances
+    new_name: No_Appliances
+    type: boolean
+    true_condition: 1
+
+  house_no_answer_appliances: &house_no_answer_appliances
+    new_name: No_Answer_Appliances
+    type: boolean
+    true_condition: 1
+
+  house_internet_access: &house_internet_access
+    new_name: Internet_Access
+    type: boolean
+    true_condition: 1
+    replace: {9: null}
+
+  house_internet_computer: &house_internet_computer
+    new_name: Internet_Via_Computer
+    type: boolean
+    true_condition: 1
+
+  house_internet_mobile: &house_internet_mobile
+    new_name: Internet_Via_Mobile
+    type: boolean
+    true_condition: 1
+
+  house_internet_tablet: &house_internet_tablet
+    new_name: Internet_Via_Tablet
+    type: boolean
+    true_condition: 1
+
+  house_internet_other: &house_internet_other
+    new_name: Internet_Via_Other
+    type: boolean
+    true_condition: 1
+
+  house_internet_other_name: &house_internet_other_name
+    new_name: Internet_Via_Other_Name
+    type: string
 
 
 form_1_master:
@@ -31,13 +216,8 @@ form_1_master:
     #   new_name: 
     #   type: 
 
-    # KhanevarType:
-    #   new_name: 
-    #   type: 
-
-    # IsJaygozin:
-    #   new_name: 
-    #   type: 
+    KhanevarType: *household_type
+    IsJaygozin: *alternative_household
 
     # Q2:
     #   new_name: 
@@ -71,149 +251,49 @@ form_1_master:
     #   new_name: 
     #   type: 
 
-    # MaskanType:
-    #   new_name: 
-    #   type: 
+    MaskanType: *house_dwelling_type
+    MaskanType_Other: *house_other_dwelling
+    CaptureType: *house_tenure
 
-    # MaskanType_Other:
-    #   new_name: 
-    #   type: 
+    Q2_1: *house_car
+    Q2_2: *house_motorcycle
+    Q2_3: *house_bicycle
+    Q2_4: *house_radio_cassette
+    Q2_5: *house_tv
+    Q2_6: *house_vcr
+    Q2_7: *house_pc_tablet
+    Q2_8: *house_cellphone
+    Q2_9: *house_phone
+    Q2_10: *house_freezer
+    Q2_11: *house_refrigerator
+    Q2_12: *house_freezer_refrigerator
+    Q2_13: *house_oven
+    Q2_14: *house_vacuum_cleaner
+    Q2_15: *house_washing_machine
+    Q2_16: *house_sewing_machine
+    Q2_17: *house_fan
+    Q2_18: *house_evaporative_ac
+    Q2_19: *house_split_ac
+    Q2_20: *house_dishwasher
+    Q2_21: *house_microwave_oven
+    Q2_22: *house_no_appliances
+    Q2_23: *house_no_answer_appliances
 
-    # CaptureType:
-    #   new_name: 
-    #   type: 
+    UseInternet: *house_internet_access
+    InternetCnnType1: *house_internet_computer
+    InternetCnnType2: *house_internet_mobile
+    InternetCnnType3: *house_internet_tablet
+    InternetCnnType4: *house_internet_other
+    InternetCnnType4_Name: *house_internet_other_name
+    InternetCnnType_EN: drop
 
-    # Q2_1:
-    #   new_name: 
-    #   type: 
-
-    # Q2_2:
-    #   new_name: 
-    #   type: 
-
-    # Q2_3:
-    #   new_name: 
-    #   type: 
-
-    # Q2_4:
-    #   new_name: 
-    #   type: 
-
-    # Q2_5:
-    #   new_name: 
-    #   type: 
-
-    # Q2_6:
-    #   new_name: 
-    #   type: 
-
-    # Q2_7:
-    #   new_name: 
-    #   type: 
-
-    # Q2_8:
-    #   new_name: 
-    #   type: 
-
-    # Q2_9:
-    #   new_name: 
-    #   type: 
-
-    # Q2_10:
-    #   new_name: 
-    #   type: 
-
-    # Q2_11:
-    #   new_name: 
-    #   type: 
-
-    # Q2_12:
-    #   new_name: 
-    #   type: 
-
-    # Q2_13:
-    #   new_name: 
-    #   type: 
-
-    # Q2_14:
-    #   new_name: 
-    #   type: 
-
-    # Q2_15:
-    #   new_name: 
-    #   type: 
-
-    # Q2_16:
-    #   new_name: 
-    #   type: 
-
-    # Q2_17:
-    #   new_name: 
-    #   type: 
-
-    # Q2_18:
-    #   new_name: 
-    #   type: 
-
-    # Q2_19:
-    #   new_name: 
-    #   type: 
-
-    # Q2_20:
-    #   new_name: 
-    #   type: 
-
-    # Q2_21:
-    #   new_name: 
-    #   type: 
-
-    # Q2_22:
-    #   new_name: 
-    #   type: 
-
-    # Q2_23:
-    #   new_name: 
-    #   type: 
-
-    # UseInternet:
-    #   new_name: 
-    #   type: 
-
-    # InternetCnnType1:
-    #   new_name: 
-    #   type: 
-
-    # InternetCnnType2:
-    #   new_name: 
-    #   type: 
-
-    # InternetCnnType3:
-    #   new_name: 
-    #   type: 
-
-    # InternetCnnType4:
-    #   new_name: 
-    #   type: 
-
-    # InternetCnnType4_Name:
-    #   new_name: 
-    #   type: 
-
-    # InternetCnnType_EN:
-    #   new_name: 
-    #   type: 
-
-    # Without_W:
-    #   new_name: 
-    #   type: 
-
-    # W_Khn:
-    #   new_name: 
-    #   type: 
-
-    # W_Khn_Y:
-    #   new_name: 
-    #   type: 
+    Without_W: drop
+    W_Khn:
+      new_name: Weight
+      type: float
+    W_Khn_Y:
+      new_name: Annual_Weight
+      type: float
 
 
 form_1_detail:
