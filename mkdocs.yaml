@@ -1,0 +1,132 @@
+site_name: TUSIR
+site_url: https://iran-open-data.github.io/TUSIR/
+repo_url: https://github.com/Iran-Open-Data/TUSIR/
+
+theme:
+  name: material
+
+  logo: assets/icons/clock-solid-full.svg
+  favicon: assets/icons/clock-solid-full.svg
+
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      primary: indigo
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  features:
+    # - navigation.tracking
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.sections
+    # - navigation.expand
+    - navigation.indexes
+    # - header.autohide
+    - toc.follow
+    - navigation.top
+    - content.code.copy
+    - content.code.annotate
+    - content.tooltips
+
+    - content.tabs.link
+
+nav:
+  # - Home: README.md
+
+  # - Usage:
+  #   - Installation Guide: usage/installation.md
+  #   - Tutorials:
+  #     - 
+
+  # - API Reference:
+  #   - api/README.md
+  #   - Setup Functions:
+  #     - hbsir.setup: api/setup.md
+  #     - hbsir.setup_config: api/setup_config.md
+  #   - Data Loading Functions:
+  #     - hbsir.load_table: api/load_table.md
+  #     - hbsir.load_knowledge: api/load_knowledge.md
+  #   - Data Addition Functions:
+  #     - hbsir.add_attribute: api/add_attribute.md
+  #     - hbsir.add_classification: api/add_classification.md
+  #     - hbsir.add_weight: api/add_weight.md
+  #     - hbsir.calculate.add_quantile: api/calculate_add_quantile.md
+  #     - hbsir.calculate.add_decile: api/calculate_add_decile.md
+  #     - hbsir.calculate.add_percentile: api/calculate_add_percentile.md
+  #   - Analitical Functions:
+  #     - hbsir.calculate.weighted_average: api/calculate_weighted_average.md
+  #     - hbsir.calculate.average_table: api/calculate_average_table.md
+  #     - hbsir.calculate.quantile: api/calculate_quantile.md
+
+  - Data Reference:
+    # - data/README.md
+    - Tables:
+      # - tables/README.md
+      - Raw Tables:
+        # - tables/raw/README.md
+        - Form 1 Master: tables/raw/form_1_master.md
+        - Form 1 Detail: tables/raw/form_1_detail.md
+        - Form 2 Master: tables/raw/form_2_master.md
+        - Form 2 Detail: tables/raw/form_2_detail.md
+      # - Cleaned Tables:
+        # - tables/cleaned/README.md
+
+  # - Knowledge Base:
+  #   - knowledge/README.md
+  #   - Statistical Center of Iran:
+  #     - knowledge/sci_results.py
+
+plugins:
+  - search
+  - autorefs
+  # - mkdocs-jupyter:
+  #     execute: true
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          paths: [tusir]
+          options:
+            docstring_style: numpy
+            show_source: false
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - md_in_html
+  - pymdownx.inlinehilite
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_javascript:
+  - javascripts/katex.js 
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
