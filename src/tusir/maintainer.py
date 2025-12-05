@@ -9,6 +9,7 @@ from bssir.maintainer import Maintainer
 defaults, metadata = config.set_package_config(Path(__file__).parent)
 api = API(defaults=defaults, metadata=metadata)
 
+
 def upload_all(
     years: _Years = "all",
     mirror_name: Optional[str] = None,
@@ -20,5 +21,4 @@ def upload_all(
     )
     years = api.utils.parse_years(years)
     maintainer.upload_raw_files(years=years)
-    # maintainer.upload_cleaned_files(years=years)
-    # maintainer.upload_external_files()
+    maintainer.upload_cleaned_files(years=years)

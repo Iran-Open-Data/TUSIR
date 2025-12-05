@@ -8,11 +8,14 @@ dependencies = [
     "bssir[all]",
 ]
 
+[tool.uv]
+package = true
+
 [tool.uv.sources]
 bssir = { git = "https://github.com/Iran-Open-Data/BSSIR" }
 
 [tool.setuptools.packages.find]
-where = ["."]
+where = ["src"]
 
 [tool.setuptools.package-data]
 private_lfsir = ["**/*.yaml"]
